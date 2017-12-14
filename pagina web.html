@@ -145,7 +145,7 @@
 	    			fanState = true;
 	    			if(checked>0){
 	    				console.log(checked);
-	    				httpGetAsync("/fanOn?onda="+checked.trim(), function (response){alert("lamparas encendidas")});
+	    				httpGetAsync("/fanOnOnda="+checked.trim(), function (response){alert("lamparas encendidas")});
 	    			}else{alert("seleccione por favor un tipo de onda");}
 	    	}else if(fanState){
 	    		document.getElementById("onFan").style.backgroundColor = "white";
